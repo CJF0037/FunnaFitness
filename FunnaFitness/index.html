@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNNAFITNESS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Thank you, see you in the gym!</h3>
+    </div>
+    <div class="hero-bg">
+        <section class = "top">
+            <header>
+                <a href="#">FUNNAFITNESS</a>
+            </header>
+
+            <h1>
+                <span>LIVE FIT</span> FUNNA FIT
+            </h1>
+
+            <p>Striving to help everyone reach their fitness goals!</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="formleft">
+                    <label for="Email">Enter your E-Mail for Daily Workouts
+                    </label>
+                    <input type="text" name = "Email" ID= "Email">
+                    <p>Example: "KobeBryant@gmail.com"</p>
+                </div>
+                    <input type="button" value="Lets get to work!" id = "eml-btn">
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="Journey">
+        <div class="right-col">
+            <h2>
+                Our Journey
+            </h2>
+            <p> This is the start</p>
+        </div>
+        <img src="images/deadlift.png" alt="Picture of a deadlift barbell">
+    </section>
+
+<script>
+let btn = document.getElementById('eml-btn');
+let overlay = document.getElementById('overlay');
+btn.addEventListener('click',()=>{
+overlay.style.display = 'grid';
+overlay.classList.add('animate-overlay')
+})
+</script>
+
+</body>
+</html>
